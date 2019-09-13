@@ -1,7 +1,7 @@
 import React from "react";
 
 function CardWrapper(props) {
-  return <div className="col-md-3">{props.children}</div>;
+  return <div className="col-xl-3 col-lg-4 col-md-6">{props.children}</div>;
 }
 
 export default CardWrapper;

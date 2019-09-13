@@ -13,7 +13,7 @@ function Navbar() {
           className="ml-5"
         />
       </a>
-      <span class="navbar-text">Rent a bike</span>
+      <span className="navbar-text">Rent a bike</span>
     </nav>
   );
 }

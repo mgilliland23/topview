@@ -3,7 +3,7 @@ import "./style.css";
 
 function Card(props) {
   return (
-    <div className="card" key={props.id}>
+    <div className="card mx-auto" key={props.id}>
       <img alt={props.name} src={props.image} className="card-img-top" />
       <div className="card-body">
         <h5 className="card-title">{props.name}</h5>

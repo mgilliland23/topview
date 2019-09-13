@@ -22,22 +22,20 @@ class App extends React.Component {
     return (
       <div>
         <Navbar />
-        <div className="centerContent">
-          <CardWrapper>
-            {this.state.rentals.products.map(rentalData => (
-              <CardColumn>
-                <Card
-                  image={rentalData.image}
-                  name={rentalData.name}
-                  id={rentalData.id}
-                  price={rentalData.price}
-                  handleClick={this.handleClick}
-                />
-              </CardColumn>
-            ))}
-            ;
-          </CardWrapper>
-        </div>
+        <CardWrapper>
+          {this.state.rentals.products.map(rentalData => (
+            <CardColumn>
+              <Card
+                image={rentalData.image}
+                name={rentalData.name}
+                id={rentalData.id}
+                price={rentalData.price}
+                handleClick={this.handleClick}
+              />
+            </CardColumn>
+          ))}
+          ;
+        </CardWrapper>
       </div>
     );
   }
